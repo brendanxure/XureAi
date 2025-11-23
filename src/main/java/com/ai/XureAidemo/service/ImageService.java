@@ -6,4 +6,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ImageService {
     private final OpenAiImageModel openAiImageModel;
+
+    public ImageService(OpenAiImageModel openAiImageModel) {
+        this.openAiImageModel = openAiImageModel;
+    }
+
 }
