@@ -19,8 +19,12 @@ public class ChatService {
 
     public String getResponseOptions(String prompt){
         return chatModel.call(
-                new Prompt("Generate the name of 5 famous pirates",
-                        OpenAiChatOptions.builder().model("gpt-4-o").temperature())
+                new Prompt(prompt,
+                        OpenAiChatOptions.builder()
+                                .model("gpt-4-o")
+                                .temperature(0.4)
+                                .build()
+                ).toString()
         );
     }
 }
