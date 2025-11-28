@@ -27,6 +27,6 @@ public class ChatService {
                                 .temperature(0.4)
                                 .build()
                 ));
-
+        return response.getResult().getOutput();
     }
 }
