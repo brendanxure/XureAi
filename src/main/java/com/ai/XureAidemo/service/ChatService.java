@@ -21,12 +21,12 @@ public class ChatService {
     public String getResponseOptions(String prompt){
         ChatResponse response = chatModel.call(
                 new Prompt(
-                        "Generate the names of 5 famous pirates.",
+                        prompt,
                         OpenAiChatOptions.builder()
                                 .model("gpt-4o")
                                 .temperature(0.4)
                                 .build()
                 ));
-        return response.getResult().getOutput();
+        return response.getResult().getOutput().getText();
     }
 }
