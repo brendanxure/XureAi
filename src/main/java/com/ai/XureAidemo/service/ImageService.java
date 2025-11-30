@@ -19,7 +19,7 @@ public class ImageService {
                 new ImagePrompt(prompt,
                         OpenAiImageOptions.builder()
                                 .quality("hd")
-                                .N(4)
+                                .N(3)
                                 .height(1024)
                                 .width(1024).build())
         );
