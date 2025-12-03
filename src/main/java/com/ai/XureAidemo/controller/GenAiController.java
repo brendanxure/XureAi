@@ -46,7 +46,7 @@ public class GenAiController {
                                        @RequestParam(defaultValue = "hd") String quality,
                                        @RequestParam(defaultValue = "1") int n,
                                        @RequestParam(defaultValue = "1024") int width,
-                                       @RequestParam(defaultValue = "1024") String height) throws IOException {
+                                       @RequestParam(defaultValue = "1024") int height) throws IOException {
         ImageResponse imageResponse = imageService.generateImage(prompt, quality, n, width, height);
 
         List<String> imageUrls = imageResponse.getResults().stream().map(result -> result.getOutput().getUrl())
