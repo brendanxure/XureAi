@@ -1,6 +1,7 @@
 package com.ai.XureAidemo.service;
 
 import org.springframework.ai.chat.model.ChatModel;
+import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +32,9 @@ public class RecipeService {
                 "cuisine", cuisine,
                 "deitaryRestrcitions", deitaryRestrcitions
         );
+
+        Prompt prompt = promptTemplate.create(params);
+        return chatModel.call(prompt).getResult().getOutput().getText();
 
     }
 }
