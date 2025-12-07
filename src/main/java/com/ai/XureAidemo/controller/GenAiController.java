@@ -54,4 +54,11 @@ public class GenAiController {
 
         return imageUrls;
     }
+
+    @GetMapping("recipe-creator")
+    public List<String> recipeCreator(@RequestParam String ingredient,
+                                      @RequestParam(defaultValue = "any") String cuisine,
+                                      @RequestParam(defaultValue = "") String dietaryRestriction){
+
+    }
 }
