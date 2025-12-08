@@ -2,6 +2,7 @@ package com.ai.XureAidemo.controller;
 
 import com.ai.XureAidemo.service.ChatService;
 import com.ai.XureAidemo.service.ImageService;
+import com.ai.XureAidemo.service.RecipeService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.ai.image.ImageResponse;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,10 +17,12 @@ import java.util.stream.Collectors;
 public class GenAiController {
     private final ChatService chatService;
     private final ImageService imageService;
+    private final RecipeService recipeService;
 
-    public GenAiController(ChatService chatService, ImageService imageService) {
+    public GenAiController(ChatService chatService, ImageService imageService, RecipeService recipeService) {
         this.chatService = chatService;
         this.imageService = imageService;
+        this.recipeService = recipeService;
     }
 
     @GetMapping("ask-ai")
