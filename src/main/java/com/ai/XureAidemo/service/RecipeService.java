@@ -20,7 +20,7 @@ public class RecipeService {
 
         var template = """
                 I want to create a recipe using the following ingredients: {ingredients}.
-                The cuisine type i prefer is {cuisine}.
+                The cuisine type I prefer is {cuisine}.
                 Please consider the following dietary restrictions: {deitaryRestrcitions}.
                 Please provide me with a detailed recipe including title, list of ingredients and cooking instructions
                 """;
