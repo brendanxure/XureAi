@@ -39,7 +39,7 @@ public class GenAiController {
     public void generateImages(HttpServletResponse response, @RequestParam String prompt) throws IOException {
         ImageResponse imageResponse = imageService.generateImage(prompt);
         String url = imageResponse.getResult().getOutput().getUrl();
-        response.sendRedirect(url);
+
     }
      */
 
