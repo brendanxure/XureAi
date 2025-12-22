@@ -36,7 +36,7 @@ public class GenAiController {
     }
 
     /* @GetMapping("generate-image")
-    public void generateImages(HttpServletResponse) throws IOException {
+    public void generateImages(HttpServletResponse) IOException {
 
     }
      */
