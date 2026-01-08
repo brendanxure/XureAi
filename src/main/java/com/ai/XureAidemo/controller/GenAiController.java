@@ -36,7 +36,7 @@ public class GenAiController {
     }
 
     /* @GetMapping("generate-image")
-    public  generateIm)  {
+    public  generateI)  {
 
     }
      */
