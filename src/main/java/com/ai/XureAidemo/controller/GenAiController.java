@@ -35,7 +35,7 @@ public class GenAiController {
         return chatService.getResponseOptions(prompt);
     }
 
-    /* @GetMapping("generate-ima")
+    /* @GetMapping("generate-im")
     )  {
 
     }
