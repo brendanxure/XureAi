@@ -11,6 +11,7 @@ public class ChatService {
     // Variable for the chat model
     private final ChatModel chatModel;
 
+    // Setters for chat model
     public ChatService(ChatModel chatModel){
         this.chatModel = chatModel;
     }
