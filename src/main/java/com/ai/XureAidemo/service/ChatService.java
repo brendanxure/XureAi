@@ -16,6 +16,7 @@ public class ChatService {
         this.chatModel = chatModel;
     }
 
+    // Getters for the chat model response
     public String getResponse(String prompt){
         return chatModel.call(prompt);
     }
