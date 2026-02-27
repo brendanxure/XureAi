@@ -21,6 +21,7 @@ public class ChatService {
         return chatModel.call(prompt);
     }
 
+    // A method used to get the response while dictating the model and options
     public String getResponseOptions(String prompt){
         ChatResponse response = chatModel.call(
                 new Prompt(
